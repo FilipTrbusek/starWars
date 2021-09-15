@@ -1,0 +1,10 @@
+@mixin navigation {
+  background-color: #8c867d;
+  padding: 0.2%;
+}
+
+@mixin navigation-link {
+  color: white;
+  margin-right: 3%;
+  text-decoration: none;
+}
