@@ -1,3 +1,10 @@
 @mixin navigation {
-    color: red;
+    background-color: #8c867d;
+    padding: .2%;
+}
+
+@mixin navigation-link {
+    color: white;
+    margin-right: 3%;
+    text-decoration: none;
 }
