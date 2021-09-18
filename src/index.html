@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <a href="#">Home</a>
-                <a href="#">Plot</a>
-                <a href="#">Characters</a>
-                <a href="#">Ratings</a>
-                <a href="#">Cats</a>
-                <a href="#">Gallery</a>
-            </ul>
-        </nav>
-        <img src="/img/welcome.jpg" alt="Banner">
-        <div class="centeredContent">
-            <h1>The Last Jedi</h1>
-            <h2>A Star Wars Story</h2>
-
-        </div>
+      <nav>
+        <ul>
+          <a href="#">Home</a>
+          <a href="#">Plot</a>
+          <a href="#">Characters</a>
+          <a href="#">Ratings</a>
+          <a href="#">Cats</a>
+          <a href="#">Gallery</a>
+        </ul>
+      </nav>
     </header>
-</body>
+
+    <section class="banner">
+      <div class="banner__heading">
+        <h1>The Last Jedi</h1>
+      </div>
+      <div class="banner__subheading">
+        <h2>A Star Wars Story</h2>
+      </div>
+    </section>
+
+    <section class="plot">
+      <div class="plot__heading">
+        <h3>Plot</h3>
+      </div>
+      <div class="plotContent">
+        <div class="plotContent__image">
+          <img src="img/poster.jpg" alt="" />
+        </div>
+        <div class="plotContent__info">
+          <h4>Darkness rises...and light to meet it.</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Praesentium, illo? Nam, possimus odit harum temporibus natus hic
+            totam? Praesentium, illo? Nam, possimus odit harum temporibus natus
+            hic totam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="charactersSection">
+      <div class="charactersSection__heading">
+        <h3>Characters</h3>
+      </div>
+      <div class="charactersSection__characters">
+        <img src="img/bb8.jpg" alt="Hamill Image" class="actor_img1" />
+        <img src="img/leia.jpg" alt="Leia Image" class="actor_img2" />
+        <img src="img/finn.jpg" alt="Finn Image" class="actor_img3" />
+        <img src="img/rey.jpg" alt="Rey Image" class="actor_img4" />
+        <img src="img/kylo.jpg" alt="Kylo Image" class="actor_img5" />
+        <img src="img/poe.jpg" alt="Poe Image" class="actor_img6" />
+        <img src="img/bb8.jpg" alt="BB8 Image" class="actor_img7" />
+      </div>
+    </section>
+  </body>
 </html>

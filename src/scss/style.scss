@@ -1,30 +1,179 @@
-@import "font";
-@import "components";
-@import "layout";
-@import "images";
-
+html,
 body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
 }
 
-nav {
-  @include navigation;
+ul {
+  margin: 0;
+  padding: 1%;
+  background-color: #666666;
 }
 
-nav a {
-  @include navigation-link;
+ul a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-weight: 500;
 }
 
-.centeredContent {
-    @include banner-image;
-    @include centered-content;
-    @include banner-text;
+ul a:hover {
+  background-color: lightgray;
+  color: black;
+  font-weight: 500;
 }
 
-img {
-  @include banner-image;
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("../img/welcome.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.banner__heading {
+  font-size: 2.4em;
+}
+
+.banner__heading h1 {
+  margin: 5% 0 5%;
+  font-weight: 500;
+}
+
+.banner__subheading h2 {
+  margin-top: 0;
+  color: #5b4e48;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.plot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e0e0e0;
+
+  &__heading h3 {
+    margin: 0;
+  }
+
+  &__heading {
+    padding: 1%;
+  }
+}
+
+.plotContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 3%;
+  width: 50rem;
+
+  &__image {
+    width: 20%;
+  }
+
+  &__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__info {
+    width: 80%;
+    padding: 4%;
+  }
+}
+
+.charactersSection {
+  background-image: url("/img/rey-standing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &__characters {
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__characters img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 5px;
+  }
+}
+
+img.actor_img1 {
+  display: flex;
+  align-self: center;
+  height: 60%;
+  width: auto;
+  border-radius: 50%;
+}
+
+img.actor_img2 {
+  display: flex;
+  align-self: center;
+  height: 70%;
+  width: auto;
+  border-radius: 50%;
+}
+
+img.actor_img3 {
+  display: flex;
+  align-self: center;
+  height: 80%;
+  width: auto;
+  border-radius: 50%;
+}
+
+img.actor_img4 {
+  display: flex;
+  align-self: center;
+  height: 90%;
+  width: auto;
+  border-radius: 50%;
+}
+
+img.actor_img5 {
+  display: flex;
+  align-self: center;
+  height: 80%;
+  width: auto;
+  border-radius: 50%;
+}
+
+img.actor_img6 {
+  display: flex;
+  align-self: center;
+  height: 70%;
+  width: auto;
+  border-radius: 50%;
+}
+
+img.actor_img7 {
+  display: flex;
+  align-self: center;
+  height: 60%;
+  width: auto;
+  border-radius: 50%;
 }
